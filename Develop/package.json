@@ -1,0 +1,22 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "readme generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Derek Bardini",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bardeeens/README-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bardeeens/README-Generator/issues"
+  },
+  "homepage": "https://github.com/bardeeens/README-Generator#readme"
+}
