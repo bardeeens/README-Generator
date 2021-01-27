@@ -52,13 +52,8 @@ const questions = [
 
 inquirer
   .prompt(questions)
-
-  
- 
-    
     .then((response) =>    
       {
-     
         let licenseURL = ``
         let licensestatement = ``
         console.log(response.license);
@@ -78,8 +73,7 @@ inquirer
     DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-    0. You just DO WHAT THE FUCK YOU WANT TO.`
-            console.log("wtfbro");  
+    0. You just DO WHAT THE FUCK YOU WANT TO.`  
                 break;
             case "Unlicense":
             licenseURL = `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`;
@@ -108,26 +102,18 @@ inquirer
     OTHER DEALINGS IN THE SOFTWARE.
     
     For more information, please refer to <http://unlicense.org/>`
-
-            console.log("Unlicense my bro");
                 break;
             default:
-                console.log("didn't work");
         }
-
 
       let README = 
 `# **${response.title}** \n${licenseURL} \n## Description:\n${response.description} \n  ## Table of Contents: \n* Installation 
-\n* Usage \n* Contributors \n* Tests \n* Questions \n* License \n### Installation \n${response.installation} \n### Usage \n${response.usage} 
-\n### License \n### Contributors \n${response.contributors} \n### Tests \n${response.tests} \n### Questions? 
-\n You can find the github repository here: \n${response.github} \n Feel free to contact me at ${response.email} if you have any questions or comments! 
-\n### Licensing \n   ${licensestatement}
-    
+\n* Usage \n* Contributors \n* Tests \n* Questions \n* License \n## Installation \n${response.installation} \n## Usage \n${response.usage} 
+\n## License \n## Contributors \n${response.contributors} \n## Tests \n${response.tests} \n## Questions? 
+\n You can find the github repository here: \n${response.github} \n Feel free to contact me at ${response.email} with any questions or comments! 
+\n## Licensing \n   ${licensestatement}`
       
-      
-      `
-      
-      fs.writeFile("README1.md", README, (error) => {
+      fs.writeFile("README.md", README, (error) => {
         if (error){
           console.log(error);
         } else {
