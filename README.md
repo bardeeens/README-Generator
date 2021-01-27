@@ -15,7 +15,7 @@ First go to GitHub and clone the repository. You will access this program throug
 ## Usage 
 You will type "node index.js" into your commandline, then all you have to do is answer a series of questions. Simple!
 
-![](Develop\programpreview.gif)
+![](Develop/programpreview.gif)
 
 ## License 
 ## Contributors 
